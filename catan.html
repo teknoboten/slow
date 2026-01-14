@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catan League</title>
+  </head>
+  <body>
+    <style>
+      .leaderboard {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: system-ui, -apple-system, sans-serif;
+        margin-bottom: 32px;
+      }
+
+      .leaderboard h2 {
+        font-family: "Roboto Slab";
+        font-weight: "700";
+        font-size: 56px;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        padding: 10px 8px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+      }
+
+      th {
+        background: #f5f5f5;
+        font-weight: 600;
+      }
+
+      td:first-child,
+      th:first-child {
+        text-align: left;
+        font-weight: 600;
+      }
+
+      /* ---------- Mobile layout ---------- */
+      @media (max-width: 700px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          margin-bottom: 16px;
+          border: 1px solid #e5e5e5;
+          border-radius: 8px;
+          padding: 12px;
+          background: #fafafa;
+        }
+
+        td {
+          display: flex;
+          justify-content: space-between;
+          padding: 6px 0;
+          border: none;
+          text-align: right;
+        }
+
+        td::before {
+          content: attr(data-label);
+          font-weight: 600;
+          text-align: left;
+        }
+      }
+    </style>
+
+    <div class="leaderboard">
+      <!-- <h2 class="ins-tile__title"><span>🐑🌾 Leaderboard 🪵🧱🪨</span></h2> -->
+
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Total Nights</th>
+            <th>Total Games</th>
+            <th>Wins</th>
+            <th>Total Score</th>
+            <th>Longest Road</th>
+            <th>Largest Army</th>
+            <th>Friendly Harbour Tokens</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td data-label="Player">Alice</td>
+            <td data-label="Total Nights">12</td>
+            <td data-label="Total Games">24</td>
+            <td data-label="Wins">8</td>
+            <td data-label="Total Score">98</td>
+            <td data-label="Longest Road">3</td>
+            <td data-label="Largest Army">2</td>
+            <td data-label="Friendly Harbour Tokens">5</td>
+          </tr>
+
+          <tr>
+            <td data-label="Player">Bob</td>
+            <td data-label="Total Nights">11</td>
+            <td data-label="Total Games">22</td>
+            <td data-label="Wins">6</td>
+            <td data-label="Total Score">91</td>
+            <td data-label="Longest Road">1</td>
+            <td data-label="Largest Army">4</td>
+            <td data-label="Friendly Harbour Tokens">3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
