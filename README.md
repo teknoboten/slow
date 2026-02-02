@@ -35,7 +35,7 @@ Random code bits for the AWG website
 }
 ```
 
-## CSS from LS support
+### CSS from LS support
 
 ```css
 /*Hide Add to Bag button for individual product*/
