@@ -1,0 +1,9 @@
+/* customize mailchump embed form abackground */
+#mc_embed_signup #mc-embedded-subscribe-form {
+  background-color: #ffffff;
+}
+
+/* customize mailchump embed form background in custom code block */
+#tile-custom-code-uqKd3a {
+  background-color: white;
+}

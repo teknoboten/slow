@@ -64,9 +64,4 @@ Random code bits for the AWG website
 .ec-size .ec-store .details-product-purchase__qty {
   display: none;
 }
-
-/* hide second level categories headers*/
-.ec-size .ec-store .grid-category__wrap {
-  display: none;
-}
 ```
