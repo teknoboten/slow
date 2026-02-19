@@ -1,7 +1,11 @@
 <div
   class="ec-size ec-store"
   id="custom-newsletter-section"
-  style="background-color: #212427"
+  style="
+    background-color: rgb(28, 28, 28);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  "
 >
   <div class="grid__container">
     <div class="section-title" style="text-align: center; margin-bottom: 40px">
@@ -18,7 +22,7 @@
       <p
         style="
           color: rgb(247, 244, 237);
-          font-family: 'Roboto Slab';
+          font-family: 'Roboto';
           font-size: 18px;
           font-weight: 400;
         "
@@ -49,22 +53,6 @@
           class="ec-form__cell"
           style="flex: 1; min-width: 250px; max-width: 400px"
         >
-          <!-- <input
-            type="email"
-            name="EMAIL"
-            class="form-control__input"
-            placeholder="Your Email Address"
-            required
-            style="
-              width: 100%;
-              height: 50px;
-              padding: 0 15px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              color: white;
-            "
-          /> -->
-
           <input
             type="email"
             name="EMAIL"
@@ -82,7 +70,23 @@
             "
           />
         </div>
-
+        <div id="mce-responses" class="clear">
+          <style>
+            .response {
+              color: white;
+            }
+          </style>
+          <div
+            class="response"
+            id="mce-error-response"
+            style="display: none"
+          ></div>
+          <div
+            class="response"
+            id="mce-success-response"
+            style="display: none"
+          ></div>
+        </div>
         <div style="position: absolute; left: -5000px" aria-hidden="true">
           <input
             type="text"
