@@ -32,7 +32,9 @@
       action="https://arrowwoodgames.us10.list-manage.com/subscribe/post?u=c41d42a49021f4124434285e1&amp;id=ec20ca0189&amp;f_id=00ebd5e3f0"
       method="post"
       id="mc-embedded-subscribe-form"
-      class="ec-form"
+      class="ec-form validate"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
     >
       <div
         class="ec-form__row"
@@ -47,7 +49,7 @@
           class="ec-form__cell"
           style="flex: 1; min-width: 250px; max-width: 400px"
         >
-          <input
+          <!-- <input
             type="email"
             name="EMAIL"
             class="form-control__input"
@@ -61,6 +63,32 @@
               border-radius: 4px;
               color: white;
             "
+          /> -->
+
+          <input
+            type="email"
+            name="EMAIL"
+            class="required email"
+            id="mce-EMAIL"
+            required=""
+            value=""
+            style="
+              width: 100%;
+              height: 50px;
+              padding: 0 15px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              color: white;
+            "
+          />
+        </div>
+
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input
+            type="text"
+            name="b_c41d42a49021f4124434285e1_ec20ca0189"
+            tabindex="-1"
+            value=""
           />
         </div>
 
@@ -68,6 +96,7 @@
           <button
             type="submit"
             name="subscribe"
+            id="mc-embedded-subscribe"
             class="form-control__button form-control__button--primary"
             style="
               height: 50px;
@@ -81,15 +110,6 @@
             Subscribe
           </button>
         </div>
-      </div>
-
-      <div style="position: absolute; left: -5000px" aria-hidden="true">
-        <input
-          type="text"
-          name="b_c41d42a49021f4124434285e1_ec20ca0189"
-          tabindex="-1"
-          value=""
-        />
       </div>
     </form>
   </div>
